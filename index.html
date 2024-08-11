@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Experience with Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('amey.png'); /* Replace with the actual image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-opacity: 0.9;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .container {
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar a {
+            color: #ff7f50;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: border-color 0.3s, border-radius 0.3s;
+            border-radius: 8px;
+            border: 2px solid transparent;
+        }
+
+        .navbar a:hover {
+            border-radius: 20px;
+            border-color: #add8e6;
+        }
+
+        .hero-text {
+            margin-top: 150px;
+            font-size: 50px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        .subtext {
+            margin-top: 10px;
+            font-size: 24px;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #ff7f50;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff6347;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="hero-text">Mountain Experience with Us</div>
+        <div class="subtext">Discover the adventure of a lifetime in the heart of the mountains.</div>
+        <a href="#features" class="btn">Explore Now</a>
+    </div>
+</body>
+</html>
